@@ -254,31 +254,66 @@
         </section>
       </article> -->
 
-      <article>
+      <article class="locatie">
         <h2>Contact</h2>
-        <div class="container">
-          <form action="action_page.php">
-        
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-          </form>
-        </div>
+
+        <ul>
+          <li>
+            <h3>Locatie</h3>
+            <ul class="map">
+              <li>lorem</li>
+              <li>lorem</li>
+            </ul>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1226.4834096588852!2d4.492821509952324!3d52.062127819175274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c929945551ef%3A0x59f6ab4c3a7521a4!2sNationaal%20Videogame%20Museum!5e0!3m2!1snl!2snl!4v1673347534581!5m2!1snl!2snl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </li>
+
+          <li>
+            <div class="container">
+              <form action="action_page.php">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                />
+
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </li>
+        </ul>
       </article>
     </main>
     <footer></footer>

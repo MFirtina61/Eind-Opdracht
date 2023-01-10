@@ -501,10 +501,46 @@ input[type=submit]:hover {
 
 
 .container {
+  width: 100%;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #24252a;
   padding: 20px;
+  width: 100%;
+
 }
+
+/* --- TICKETS/OPENINGSTIJDEN --- */
+
+.locatie {
+  max-width: 100%;
+}
+
+.locatie h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+.locatie > ul {
+  padding: 15px;
+  list-style-type: none;
+  display: flex;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  gap: 100px;
+}
+
+.locatie > ul > li {
+  width: 50%;
+}
+
+.map li {
+  text-align: left;
+
+}
+
+
 
 
 
