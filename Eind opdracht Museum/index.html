@@ -7,12 +7,6 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="script.js"></script>
-
-    <script
-      src="https://kit.fontawesome.com/4c2f0c1b0c.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <!-- BLOK 1: NAVIGATIE -->
@@ -90,7 +84,7 @@
           </li>
         </ul>
       </article>
-      <section class="fotoslider">
+      <article class="fotoslider">
         <div class="slider-wrapper">
           <div class="slider">
             <img
@@ -115,7 +109,7 @@
             <a href="#slide-3"></a>
           </div>
         </div>
-      </section>
+      </article>
       <article class="geschiedenis">
         <h2>Tickets/Openingstijden</h2>
 
@@ -162,31 +156,138 @@
 
       <!-- <===GAME===> -->
 
-      <div class="game">
-        <canvas id="gc" width="500px" height="300px"></canvas>
-      </div>
-      <h2>Reviews</h2>
+      <article class="game">
+        <h2>Ping Pong</h2>
+        <canvas id="gc" width="400px" height="300px"></canvas>
+      </article>
+
       <article class="comments">
+        <h2>Reviews</h2>
         <section>
           <h4>Thomas</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui, unde</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
         </section>
         <section>
           <h4>Jan</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui, unde</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
         </section>
         <section>
           <h4>Mucahid</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui, unde</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section>
+          <h4>Thomas</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section>
+          <h4>Jan</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section>
+          <h4>Mucahid</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section>
+          <h4>Thomas</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section>
+          <h4>Jan</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
+          <p class="datum">03-10-2006</p>
+          <i class="fa-solid fa-heart"></i>
+        </section>
+        <section id="hartje-container">
+          <h4>Mucahid</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum qui,
+            unde
+          </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
         </section>
       </article>
+
+      <!-- <article class="nieuw">
+        <section>
+          <h4>Plaats review</h4>
+          <img src="/images/Plusje.svg" width = "40px" alt="">
+        </section>
+        </section>
+      </article> -->
+
+      <article>
+        <h2>Contact</h2>
+        <div class="container">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+      </article>
     </main>
     <footer></footer>
   </body>
+  <script src="script.js"></script>
+  <script src="canvas.js"></script>
+
+  <script
+    src="https://kit.fontawesome.com/4c2f0c1b0c.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
