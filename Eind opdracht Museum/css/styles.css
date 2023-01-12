@@ -227,6 +227,7 @@ h3 {
 
 .ticket > ul > li {
   width: 50%;
+  text-align: left;
 }
 
 .ticket p {
