@@ -513,6 +513,11 @@ input[type=submit]:hover {
 
 .locatie {
   max-width: 100%;
+  background-color: #24252a;
+}
+
+.locatie h2 {
+  color: #edf0f1;
 }
 
 .locatie h3 {
@@ -533,6 +538,7 @@ input[type=submit]:hover {
 
 .locatie > ul > li {
   width: 50%;
+  color: 	#edf0f1;
 }
 
 .map li {
