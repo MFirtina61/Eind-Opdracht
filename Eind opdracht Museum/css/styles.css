@@ -11,6 +11,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+
 /* --- ALGEMEEN --- */
 
 a,
@@ -74,6 +83,33 @@ header {
   flex-wrap: wrap;
 }
 
+.talen {
+  position: absolute;
+  display:flex;
+  position:fixed;
+  bottom:30px;
+  z-index: 10;
+  right: 0;
+}
+
+.talen img {
+  width: 5vh;
+  position: absolute;
+  display:flex;
+  position:fixed;
+  bottom:30px;
+  z-index: 10;
+}
+
+.eng {
+  right:20px;
+
+}
+
+.nederland {
+  right:80px;
+}
+
 .logo {
   width: 70px;
   cursor: pointer;
@@ -120,6 +156,12 @@ header {
   transform: scaleX(1);
 }
 
+.navigatie img {
+  width: 30px;
+  height: 20px;
+  float: right;
+}
+
 /* main {
   width: 80%;
 } */
@@ -153,7 +195,6 @@ header {
   color: #edf0f1;
   background-position: top;
   position: relative;
-  
 }
 
 .overzicht i {
@@ -192,6 +233,7 @@ header {
 
 .overzicht ul li p {
   list-style-type: none;
+  padding-bottom: 50px;
 }
 
 /* --- TICKETS/OPENINGSTIJDEN --- */
@@ -247,12 +289,10 @@ h3 {
   transition: 0.3s;
 }
 
-/* imageslider */
+/* Imageslider */
 
 .fotoslider {
-  /* padding: 32px; */
   background-color: #24252a;
-  /* height: 500px; */
 }
 
 .slider-wrapper {
@@ -309,11 +349,10 @@ h3 {
 
 .geschiedenis img {
   width: 90%;
-  box-shadow: 10px 10px #24252a;;
+  box-shadow: 10px 10px #24252a;
 }
 
 .geschiedenis {
-  /* height: 500px; */
   max-width: 100%;
 }
 
@@ -338,6 +377,7 @@ h3 {
   width: 60%;
   margin: auto;
   gap: 100px;
+  margin-bottom: 20px;
 }
 
 .geschiedenis > ul > li {
@@ -348,7 +388,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-/* <---GAME---> */
+/* <---Game---> */
 
 .game {
   text-align: center;
@@ -364,17 +404,16 @@ h3 {
 
 .game canvas {
   margin-bottom: 40px;
-
 }
 
-/* --- COMMENTS --- */
+/* --- Comments --- */
 
 .comments {
   display: flex;
   gap: 0 50px;
   width: 80%;
   margin: auto;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .comments section {
@@ -403,13 +442,13 @@ h3 {
   padding-bottom: 10px;
 }
 
-
 .comments i {
   color: lightgray;
-  float:  right;
+  float: right;
   cursor: pointer;
 }
 
+/* Liken */
 .liked i {
   color: red;
 }
@@ -420,13 +459,11 @@ h3 {
   color: rgba(112, 112, 112, 0.637);
 }
 
+/* Contact formulier */
 
-
-
-
-
-
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -435,15 +472,15 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -460,35 +497,21 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/* .rij:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-@media screen and (max-width: 600px) {
-  .kolom, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
-  padding: 12px; 
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
   resize: vertical;
 }
 
-
-input[type=submit] {
-  background-color: #04AA6D;
+input[type="submit"] {
+  background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -496,10 +519,9 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
-
 
 .container {
   width: 100%;
@@ -507,7 +529,6 @@ input[type=submit]:hover {
   background-color: #24252a;
   padding: 20px;
   width: 100%;
-
 }
 
 /* --- TICKETS/OPENINGSTIJDEN --- */
@@ -517,15 +538,15 @@ input[type=submit]:hover {
   background-color: #24252a;
 }
 
-.locatie h2 {
-  color: #edf0f1;
-}
-
 .locatie h3 {
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #edf0f1;
 }
 
+.locatie h2 {
+  color: #edf0f1;
+}
 
 .locatie > ul {
   padding: 15px;
@@ -539,17 +560,98 @@ input[type=submit]:hover {
 
 .locatie > ul > li {
   width: 50%;
-  color: 	#edf0f1;
+  color: #edf0f1;
+}
+
+.locatie li:nth-child(1) {
+  padding-top: 50px;
+}
+
+.map ul {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
 }
 
 .map li {
+  display: block;
   text-align: left;
-
 }
 
+.map li p {
+  padding-top: 30px;
+}
 
+.container {
+  width: 100%;
+}
 
+/* Footer */
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
 
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 
 
 @keyframes blink {
@@ -562,3 +664,83 @@ input[type=submit]:hover {
     transform: scale(1.5) translateY(10px);
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .kolom,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .locatie ul {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+
+   .comments section {
+    width: 45%;
+  }
+
+  .geschiedenis ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-basic ul {
+    flex-direction: column;
+
+  }
+
+  .locatie > ul > li, .geschiedenis > ul > li , .geschiedenis > ul > li  img {
+    width: 100%;
+  }
+  .oi{
+    flex-direction: column-reverse;
+  }
+
+  .geschiedenis > ul {
+    gap: 0;
+    width: 80%;
+  }
+
+  .ticket > ul {
+    width: 80%;
+    flex-wrap: wrap;
+    display: block;
+    margin: auto;
+  }
+  
+  .ticket > ul > li {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 50px;
+  }
+
+  .overzicht ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .overzicht ul li {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 26px;
+    padding-bottom: 25px;
+  }
+  
+  .game canvas {
+    width: 300px;
+  }
+
+}
+
+
+
+  @media only screen and (max-width: 600px) { 
+     .comments section {
+      width: 100%;
+    }
+    }
