@@ -9,18 +9,45 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
+
+
     <!-- BLOK 1: NAVIGATIE -->
+    <div class="mobiel">
+    <div class="mobiel-menu-container">
+      <button type="button" id="hamburger-knop" aria-label="open het menu">
+        <span></span><span></span>
+      </button>
+      <a href="index.html"><img class="logo" src="/images/Logo.png" alt="logo van game museum" /></a>
+      </div>
+    </div>
+  
+
+      <section class="mobiel-menu">
+        <nav>
+          <ul class="navigatie-2">
+            <li><a href="#OVERZICHT">Museum overview</a></li>
+            <li><a href="#TICKETS">Tickets and opening times</a></li>
+            <li><a href="#GESCHIEDEIS">History and Game</a></li>
+            <li><a href="#COMMENTS">Reviews</a></li>
+          </ul>
+        </nav>
+        <a class="knop" href="#CONTACT"><button>Contact</button></a>
+      </section>
+
+
+
+
     <header>
       <img class="logo" src="/images/Logo.png" alt="logo van game museum" />
       <nav>
         <ul class="navigatie">
-          <li><a href="#">Museum overview</a></li>
-          <li><a href="#">Tickets and opening times</a></li>
-          <li><a href="#">History and Game</a></li>
-          <li><a href="#">Reviews</a></li>
+          <li><a href="#OVERZICHT">Museum overview</a></li>
+          <li><a href="#TICKETS">Tickets and opening times</a></li>
+          <li><a href="#GESCHIEDEIS">History and Game</a></li>
+          <li><a href="#COMMENTS">Reviews</a></li>
         </ul>
       </nav>
-      <a class="knop" href="#"><button>Contact</button></a>
+      <a class="knop" href="#CONTACT"><button>Contact</button></a>
     </header>
 
     <div class="talen"> 
@@ -35,7 +62,7 @@
       </article>
 
       <!-- BLOK 3: OVERZICHT -->
-      <article class="overzicht">
+      <article id="OVERZICHT" class="overzicht">
         <i class="fa-solid fa-arrow-down"></i>
 
         <h2>Museum overview</h2>
@@ -59,8 +86,8 @@
         </ul>
       </article>
 
-      <article class="ticket">
-        <h2>Tickets/Opening times</h2>
+      <article id="TICKETS" class="ticket">
+        <h2>Tickets/Openingstijden</h2>
 
         <ul>
           <li>
@@ -90,7 +117,7 @@
                 Wen: 10.00-12.00 | 12.00-14.00 | 14.00-16.00 | 16.00-18.00 uur
               </li>
               <li>
-                Thu: 10.00-12.00 | 12.00-14.00 | 14.00-16.00 | 16.00-18.00 uur
+                Thur: 10.00-12.00 | 12.00-14.00 | 14.00-16.00 | 16.00-18.00 uur
               </li>
               <li>
                 Fri: 10.00-12.00 | 12.00-14.00 | 14.00-16.00 | 16.00-18.00 |
@@ -126,12 +153,12 @@
           </div>
         </div>
       </article>
-      <article class="geschiedenis">
-        <h2>History</h2>
+      <article id="GESCHIEDEIS" class="geschiedenis">
+        <h2>Geschiedenis</h2>
 
         <ul>
           <li>
-            <h3>History</h3>
+            <h3>A garage box</h3>
             <p>
               A garage box in The Hague is the place where the adventure in 2008
               started, with two friends Hasan Tasdemir and Pascal Rappailles. The
@@ -158,7 +185,7 @@
           </li>
           <li>
             <ul>
-              <h3>History</h3>
+              <h3>The goal</h3>
               <p>
                 Soon there were more people who wanted to join, so both
                 the location if the hobby approach is no longer sufficient
@@ -183,12 +210,13 @@
         <canvas id="gc" width="400px" height="300px"></canvas>
       </article>
 
-      <article class="comments">
+      <article id="COMMENTS" class="comments">
         <h2>Reviews</h2>
         <section>
           <h4>Thomas</h4>
           <p>
-            I've been there with my kids and they had a lot of fun, highly recommended.          </p>
+            I've been there et i kids and they had a lot of fun, highly recommended.
+          </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart" onclick="app.liken()"></i>
         </section>
@@ -202,7 +230,8 @@
         <section>
           <h4>Mucahid</h4>
           <p>
-            I've been there with my kids and they had a lot of fun, highly recommended.
+            I've been there et i kids and they had a lot of fun, highly recommended.
+          </p>
           </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
@@ -210,7 +239,7 @@
         <section>
           <h4>Thomas</h4>
           <p>
-            very nice. not only for children I also had a lot of fun myself.  
+            very nice. not only for children I also had a lot of fun myself.
           </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
@@ -218,7 +247,8 @@
         <section>
           <h4>Jan</h4>
           <p>
-            I've been there with my kids and they had a lot of fun, highly recommended.
+            I've been there et i kids and they had a lot of fun, highly recommended.
+          </p>
           </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
@@ -234,7 +264,8 @@
         <section>
           <h4>Thomas</h4>
           <p>
-            I've been there with my kids and they had a lot of fun, highly recommended.
+            I've been there et i kids and they had a lot of fun, highly recommended.
+          </p>
           </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
@@ -250,7 +281,8 @@
         <section id="hartje-container">
           <h4>Mucahid</h4>
           <p>
-            I've been there with my kids and they had a lot of fun, highly recommended.
+            I've been there et i kids and they had a lot of fun, highly recommended.
+          </p>
           </p>
           <p class="datum">03-10-2006</p>
           <i class="fa-solid fa-heart"></i>
@@ -260,7 +292,7 @@
 
 <!-- Contact -->
 
-      <article class="locatie">
+      <article id="CONTACT" class="locatie">
         <h2>Contact</h2>
 
         <ul class="map">
@@ -270,7 +302,7 @@
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <p>Phone number: <a href="tel:079 785 39 31">079 785 39 31</a></p>
+            <p>Telefoon nummer: <a href="tel:079 785 39 31">079 785 39 31</a></p>
             <p>Mail: <a href="mailto:info@nationaalvideogamemuseum.nl">info@nationaalvideogamemuseum.nl</a></p>            
            </li>
           <li>
@@ -321,13 +353,13 @@
     <footer>
     <div class="footer-basic">
         <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <div class="social"><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Museum overview</a></li>
-                <li class="list-inline-item"><a href="#">Tickets and opening times</a></li>
-                <li class="list-inline-item"><a href="#">History and Game</a></li>
-                <li class="list-inline-item"><a href="#">Reviews</a></li>
-                <li class="list-inline-item"><a href="#">Contact</a></li>
+                <li class="list-inline-item"><a href="#OVERZICHT">Museum overview</a></li>
+                <li class="list-inline-item"><a href="#TICKETS">Tickets and opening times</a></li>
+                <li class="list-inline-item"><a href="#GESCHIEDEIS">History and Game</a></li>
+                <li class="list-inline-item"><a href="#COMMENTS">Reviews</a></li>
+                <li class="list-inline-item"><a href="#CONTACT">Contact</a></li>
             </ul>
             <p class="copyright">Game museum © 2023</p>
         </footer>

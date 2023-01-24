@@ -11,14 +11,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
 }
-
 
 /* --- ALGEMEEN --- */
 
@@ -70,6 +69,85 @@ content: "o";
 display: block;
 } */
 
+.logo2 {
+  color: #edf0f1;
+}
+
+.mobiel {
+  display: none;
+}
+
+.mobiel-menu-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #24252a;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.mobiel-menu-container button {
+  background-color: transparent;
+}
+
+.mobiel-menu-container span {
+  position: absolute;
+  width: 1.25em;
+  height: 0.25px;
+  background-color: white;
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobiel-menu-container span:first-of-type {
+  transform: translatey(-5px);
+}
+
+.mobiel-menu-container span:last-of-type {
+  transform: translatey(5px);
+}
+
+.menuOpen .mobiel-menu-container span {
+  transition: 0.25s ease-out;
+}
+
+.menuOpen .mobiel-menu-container span:first-of-type {
+  transform: translatey(0) rotate(45deg);
+}
+
+.mobiel-menu-container img {
+  filter: invert(1);
+}
+
+.mobiel-menu {
+  background-color: #24252a;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: 1s ease-in-out;
+  z-index: 8;
+  display: none;
+}
+
+.menu-open .mobiel-menu {
+  transform: translateX(0%);
+}
+
+.mobiel-menu nav {
+  padding-top: 80px;
+}
+
+.mobiel-menu ul {
+  list-style-type: none;
+}
+
+.mobiel-menu ul li {
+  padding-bottom: 50px;
+}
+
 /* --- NAVIGATIE --- */
 
 header {
@@ -85,9 +163,9 @@ header {
 
 .talen {
   position: absolute;
-  display:flex;
-  position:fixed;
-  bottom:30px;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
   z-index: 10;
   right: 0;
 }
@@ -95,19 +173,18 @@ header {
 .talen img {
   width: 5vh;
   position: absolute;
-  display:flex;
-  position:fixed;
-  bottom:30px;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
   z-index: 10;
 }
 
 .eng {
-  right:20px;
-
+  right: 20px;
 }
 
 .nederland {
-  right:80px;
+  right: 80px;
 }
 
 .logo {
@@ -591,68 +668,67 @@ input[type="submit"]:hover {
 
 /* Footer */
 .footer-basic {
-  padding:40px 0;
-  background-color:#ffffff;
-  color:#4b4c4d;
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
 }
 
 .footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .footer-basic li {
-  padding:0 10px;
+  padding: 0 10px;
 }
 
 .footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .footer-basic .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:inherit;
-  opacity:0.75;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
 }
 
 .footer-basic .social > a:hover {
-  opacity:0.9;
+  opacity: 0.9;
 }
 
 .footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
 }
-
 
 @keyframes blink {
   0% {
@@ -677,7 +753,7 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
   }
 
-   .comments section {
+  .comments section {
     width: 45%;
   }
 
@@ -687,13 +763,14 @@ input[type="submit"]:hover {
 
   .footer-basic ul {
     flex-direction: column;
-
   }
 
-  .locatie > ul > li, .geschiedenis > ul > li , .geschiedenis > ul > li  img {
+  .locatie > ul > li,
+  .geschiedenis > ul > li,
+  .geschiedenis > ul > li img {
     width: 100%;
   }
-  .oi{
+  .oi {
     flex-direction: column-reverse;
   }
 
@@ -708,7 +785,7 @@ input[type="submit"]:hover {
     display: block;
     margin: auto;
   }
-  
+
   .ticket > ul > li {
     width: 100%;
     text-align: left;
@@ -719,7 +796,7 @@ input[type="submit"]:hover {
     width: 100%;
     flex-wrap: wrap;
   }
-  
+
   .overzicht ul li {
     width: 80%;
     display: block;
@@ -730,17 +807,23 @@ input[type="submit"]:hover {
     font-size: 26px;
     padding-bottom: 25px;
   }
-  
+
   .game canvas {
     width: 300px;
   }
-
+  header {
+    display: none;
+  }
+  .mobiel {
+    display: block;
+  }
+  .mobiel-menu {
+    display: block;
+  }
 }
 
-
-
-  @media only screen and (max-width: 600px) { 
-     .comments section {
-      width: 100%;
-    }
-    }
+@media only screen and (max-width: 600px) {
+  .comments section {
+    width: 100%;
+  }
+}

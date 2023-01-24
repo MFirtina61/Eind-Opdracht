@@ -38,21 +38,11 @@ const app = new App();
 
 
 
-// for (i = 0; i < hartjeContainer.length; ++i) {
-//   console.log("1");
-// }
-
-// for (i = 0; i < hartje.length; ++i) {
-//   // hartje[i].classList.toggle("liked");
-//   console.log("2");
-// }
-
-// function liken() {
-
-// hartje[i].classList.toggle("liked");
-// tis.addEventListener("click", liken);
-
-// }
+var hamburgerKnop = document.getElementById("hamburger-knop");
 
 
-// // console.log(hartjeContainer.length);
+function openMenu() {
+  document.body.classList.toggle("menu-open");
+}
+
+hamburgerKnop.addEventListener("click", openMenu);
